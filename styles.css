@@ -6,23 +6,20 @@ body {
 .container {
     background-color: green;
     display: grid;
-    grid-template-columns: repeat(16, auto);
-    grid-template-rows: repeat(16, auto);
+    grid-template-columns: repeat(var(--columns-row), 1fr);
+    grid-template-rows: repeat(var(--columns-row), 1fr);
     border: 1px solid #444;
     height: 960px;
     width: 960px;
-    grid-template-rows: auto;
-  }
+}
 
 .square {
     border: 1px solid #444;
     background:#fff;
     text-align: center;
-
+    
 }
 
 .button {
     margin-bottom: 30px;
-
-
 }
